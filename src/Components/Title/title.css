@@ -1,0 +1,13 @@
+.jumbotron{
+    padding-top: .1%;
+    padding-bottom: .1%;
+}
+.container{
+    text-align: center;
+}
+img{
+    height:42px;
+    width:42px;
+    /* position: fixed; */
+    float: right;
+}
