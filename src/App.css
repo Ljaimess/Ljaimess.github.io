@@ -1,0 +1,82 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: black;
+    color: white;
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 22px;
+
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+  
+  
+    
+  .menu {
+    text-align: center;
+    margin-left: 34%;
+    padding: 1%;
+    width: 30%;
+    height: 100%;
+
+    
+    overflow: auto;
+    margin-bottom: 2.5%;
+  }
+
+  h3{
+    text-decoration: none;
+    color: white
+  }
+
+  .project:hover{
+    background-image: url("http://res.cloudinary.com/forte-3d/image/upload/v1512749704/hand_gkm8wr.png");
+    background-size: 10%;
+    background-repeat: no-repeat;
+    
+  }
+
+  .about:hover{
+    background-image: url("http://res.cloudinary.com/forte-3d/image/upload/v1512749704/hand_gkm8wr.png");
+    background-size: 10%;
+    background-repeat: no-repeat;
+    
+  }
+  
+  .contact:hover{
+    background-image: url("http://res.cloudinary.com/forte-3d/image/upload/v1512749704/hand_gkm8wr.png");
+    background-size: 10%;
+    background-repeat: no-repeat;
+    
+  }
+
+  .link:hover{
+    background-image: url("http://res.cloudinary.com/forte-3d/image/upload/v1512749704/hand_gkm8wr.png");
+    background-size: 10%;
+    background-repeat: no-repeat;
+    
+  }
+
+  .page-footer{
+    background-color: black;
+}
+
+/* about Page */
+
+.info{
+  text-align: center ;
+  font-size: 85%;
+}
+  
+  
+
+  

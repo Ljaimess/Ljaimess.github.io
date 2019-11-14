@@ -1,51 +1,31 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
-import TopBar from "./Components/Topbar/topbar";
-import Title from "./Components/Title/title"
+import Home from "./Components/pages/home"
+import Projects from "./Components/pages/projects"
+import About from "./Components/pages/about"
+import Footer from "./Components/Footer/footer"
 
-class App extends Component {
-  state = {}
 
-  header = {
-    title: "The Adventure of Laurentino",
-    subtitle: "A command line quest",
-    image: "https://vignette.wikia.nocookie.net/animalcrossing/images/5/5e/Blathers_-_Animal_Crossing_New_Leaf.png/revision/latest?cb=20130807000633"
+function App() {
+  return (
+    <Router>
+      <div>
 
-  }
-
-  render() {
-    return (
-      <div className="App">
-        <TopBar />
-        <Title
-          title={this.header.title}
-          subtitle={this.header.subtitle}
-          image={this.header.image}
-        />
-
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/projects" component={Projects} />
+          <Route exact path="/about" component={About} />
+          {/* <Route exact path="/contact" component={Contact} />
+          <Route exact path="/link" component={Links} /> */}
+          
+          {/* <Route component={NoMatch} /> */} */}
+        </Switch>
       </div>
-    );
-  }
+      <Footer />
+    </Router>
+
+  );
 }
 
 export default App;
-
-// props = {
-//   title: "The Adventure of Laurentino",
-//   subtitle: "A command line adventure"
-// }
-
-// function App (props) {
-//   return (
-//     <div className="App">
-//       <TopBar/>
-//       <Title
-//         {...this.props}
-
-//       />
-
-//     </div>
-//   );
-// }
-
-// export default App;

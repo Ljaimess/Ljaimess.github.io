@@ -4,8 +4,8 @@ import "./title.css";
 
 
 const Title = props => (
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
+    <div className="jumbotron jumbotron-fluid">
+        <div className="container">
             <h1>{props.title}</h1>
             <h3>{props.subtitle}</h3>
             <img src={props.image} alt="me"/>
