@@ -1,19 +1,23 @@
 import React from 'react';
 import TopBar from "../Topbar/topbar";
+import AppCard from "../AppBox/box";
+import Apps from "../../../src/theapps.json";
 
-const items = ["hi", "hello"]
 
-const list = () => {
-    items.map(item => <div className="things"></div>)
-}
- 
-
-const Projects = props => {
-    return (<div>
-        <TopBar/>
-        {list()}
-    </div>
+const Projects = () => {
+    return (
+        <div>
+            <TopBar />
+            <div className="appHolder"> {
+                Apps.map(Card => (
+                    <AppCard id={Card.id}
+                        link={Card.url}
+                        name={Card.name} />
+                ))
+            } 
+            </div>
+        </div>
     );
 }
- 
+
 export default Projects;

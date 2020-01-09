@@ -8,21 +8,22 @@ class Home extends Component {
     state = {
         title: "The Adventures of Laurentino",
         subtitle: "A command line quest",
-        image: "../public/pics/me.png",
+        image: "/src/Components/Title/me.png",
 
         portfolio: "Projects",
         about: "About",
         contact: "Contact",
         links: "Links",
-        info: "im colombian",
+       
     }
     render() {
         return (
             <div className="App">
                 <Title
                     title={this.state.title}
-                    subtitle={this.state.subtitle}>
-                <div className="picme"></div>
+                    subtitle={this.state.subtitle}
+                    image={this.state.image}
+                    >
                 </Title>
                 <div className="menu">
                     <div className="project">

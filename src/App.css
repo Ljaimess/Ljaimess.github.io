@@ -8,75 +8,107 @@ body {
     color: white;
     font-family: 'Press Start 2P', sans-serif;
     font-size: 22px;
-
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-  }
+}
 
-  main {
+main {
     flex: 1 0 auto;
-  }
+}
 
-  
-  
-    
-  .menu {
+.picme {
+    float: right;
+    background-image: url("/src/Components/Title/me.png");
+    background-size: 10% 10%;
+    /* width: 60;
+    height:60; */
+}
+
+.menu {
     text-align: center;
     margin-left: 34%;
     padding: 1%;
     width: 30%;
     height: 100%;
-
-    
     overflow: auto;
     margin-bottom: 2.5%;
-  }
+}
 
-  h3{
+h3 {
     text-decoration: none;
     color: white
-  }
-
-  .project:hover{
-    background-image: url("http://res.cloudinary.com/forte-3d/image/upload/v1512749704/hand_gkm8wr.png");
-    background-size: 10%;
-    background-repeat: no-repeat;
-    
-  }
-
-  .about:hover{
-    background-image: url("http://res.cloudinary.com/forte-3d/image/upload/v1512749704/hand_gkm8wr.png");
-    background-size: 10%;
-    background-repeat: no-repeat;
-    
-  }
-  
-  .contact:hover{
-    background-image: url("http://res.cloudinary.com/forte-3d/image/upload/v1512749704/hand_gkm8wr.png");
-    background-size: 10%;
-    background-repeat: no-repeat;
-    
-  }
-
-  .link:hover{
-    background-image: url("http://res.cloudinary.com/forte-3d/image/upload/v1512749704/hand_gkm8wr.png");
-    background-size: 10%;
-    background-repeat: no-repeat;
-    
-  }
-
-  .page-footer{
-    background-color: black;
 }
+
+.project:hover {
+    background-image: url("http://res.cloudinary.com/forte-3d/image/upload/v1512749704/hand_gkm8wr.png");
+    background-size: 10%;
+    background-repeat: no-repeat;
+}
+
+.about:hover {
+    background-image: url("http://res.cloudinary.com/forte-3d/image/upload/v1512749704/hand_gkm8wr.png");
+    background-size: 10%;
+    background-repeat: no-repeat;
+}
+
+.contact:hover {
+    background-image: url("http://res.cloudinary.com/forte-3d/image/upload/v1512749704/hand_gkm8wr.png");
+    background-size: 10%;
+    background-repeat: no-repeat;
+}
+
+.link:hover {
+    background-image: url("http://res.cloudinary.com/forte-3d/image/upload/v1512749704/hand_gkm8wr.png");
+    background-size: 10%;
+    background-repeat: no-repeat;
+}
+
+.appHolder:hover {
+    background-image: url("http://res.cloudinary.com/forte-3d/image/upload/v1512749704/hand_gkm8wr.png");
+    background-size: 10%;
+    background-repeat: no-repeat;
+}
+
+.page-footer {
+    background-color: black;
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+}
+
 
 /* about Page */
 
-.info{
-  text-align: center ;
-  font-size: 85%;
+.info {
+    text-align: center;
+    font-size: 85%;
 }
-  
-  
 
-  
+
+/* apps */
+
+.appHolder {
+    height:500px ;
+    width:70%;
+    margin-right: 10%;
+    margin-left: 15%;
+    margin-top: 5%;
+    
+    overflow: scroll;
+    
+    
+}
+
+.card{
+    background-color: black;
+    border:black;   
+}
+::-webkit-scrollbar {
+    background-color:black;
+ 
+}
+
+::-webkit-scrollbar-corner {
+    background-color:black;
+}

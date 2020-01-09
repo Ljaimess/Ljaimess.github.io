@@ -1,10 +1,9 @@
 {
   "name": "my-portfolio",
+  "homepage": "http://Ljaimesss.github.io/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-
-
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-router-dom": "^5.1.2",
@@ -33,6 +32,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^2.1.1"
+    "gh-pages": "^2.2.0"
   }
 }

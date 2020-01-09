@@ -1,5 +1,6 @@
 import React from 'react';
 import TopBar from "../Topbar/topbar";
+import Footer from "../Footer/footer";
 
 // const items = ["hi", "hello"]
 
@@ -20,6 +21,7 @@ const About = props => {
             </p>
             </div>
         </div>
+        <Footer/>
     </div>
     );
 }

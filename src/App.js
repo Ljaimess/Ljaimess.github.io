@@ -5,6 +5,7 @@ import Home from "./Components/pages/home"
 import Projects from "./Components/pages/projects"
 import About from "./Components/pages/about"
 import Footer from "./Components/Footer/footer"
+import Contact from "./Components/pages/contact"
 
 
 function App() {
@@ -16,10 +17,10 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route exact path="/projects" component={Projects} />
           <Route exact path="/about" component={About} />
-          {/* <Route exact path="/contact" component={Contact} />
-          <Route exact path="/link" component={Links} /> */}
+          <Route exact path="/contact" component={Contact} />
+          {/* <Route exact path="/link" component={Links} />
           
-          {/* <Route component={NoMatch} /> */} */}
+          <Route component={NoMatch} /> */}
         </Switch>
       </div>
       <Footer />
